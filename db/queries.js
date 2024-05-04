@@ -8,7 +8,7 @@ const { userModel } = require("@/models/user-model");
 
 
 async function createUser(user) {
-    ç
+    await dbConnect()
     return await userModel.create(user);
 }
 
