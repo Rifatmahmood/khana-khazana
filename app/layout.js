@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Khana Khazana - Home",
     description: "Explore a world of culinary delights at Khana Khazana! Whether you're a seasoned chef or a beginner in the kitchen, our website offers a treasure trove of mouthwatering recipes from around the globe.",
-    url: NEXT_PUBLIC_SITE_URL + '/',
+    url: NEXT_PUBLIC_SITE_URL,
     siteName: "Khana Khazana",
     type: 'website',
     images: [
