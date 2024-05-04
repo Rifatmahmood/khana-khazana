@@ -4,7 +4,7 @@ import { addFavouriteRecipe } from "@/app/actions";
 import { useAuth } from "@/app/hooks/useAuth";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
-import { FacebookIcon, FacebookShareButton, TwitterIcon, TwitterShareButton } from "react-share";
+import { TwitterIcon, TwitterShareButton } from "react-share";
 const NEXT_PUBLIC_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL
 
 const ActionButtons = ({ recipe }) => {
@@ -47,15 +47,7 @@ const ActionButtons = ({ recipe }) => {
             </button>
 
             
-            <FacebookShareButton
-                url={`${NEXT_PUBLIC_SITE_URL}/details/${recipeID}`}
-                title = {recipe.title}
-            >
-                <div className="flex gap-2 text-gray-600 cursor-pointer hover:text-[#0E79F6]">
-                    <FacebookIcon size={32} round={true} />
-                    <span>Facebook</span>
-                </div>
-            </FacebookShareButton>
+           
             <TwitterShareButton
                 url={`${NEXT_PUBLIC_SITE_URL}/details/${recipeID}`}
                 title = {recipe.title}
